@@ -1,0 +1,19 @@
+@charset 'utf-8';
+$colors: lightgreen lightyellow;
+$idx: 1;
+
+@function getColor(){
+	$idx: $idx + 1;
+	@if $idx > 2 {
+		$idx: 1;
+	}
+	@return  nth($colors,$idx);
+}
+
+div:nth-child(odd){
+	background-color: lightgreen;
+}
+
+div:nth-child(even){
+	background-color: lightyellow;
+}

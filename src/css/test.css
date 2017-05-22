@@ -1,0 +1,9 @@
+/* line 13, src/sass/test.scss */
+div:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+/* line 17, src/sass/test.scss */
+div:nth-child(even) {
+  background-color: lightyellow;
+}

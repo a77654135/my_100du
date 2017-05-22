@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+// reset
+body,h1,h2,h3,h4,h5,h6,ol,ul,li,form,input,textarea,select,option,table,th,tr,td,dl,dd,p{margin:0; padding:0;}
+input,textarea{outline: none;}
+textarea{resize:none; overflow: hidden;}
+table{border-collapse:collapse;}
+em{font-style:normal;}
+a{text-decoration:none;}
+img{border:none;vertical-align: top;}
+li{list-style: none;}
+body{font-size:12px; font-family:"微软雅黑";}
+
+// reset end
+
+// public
+.clear{zoom:1;}
+.clear:after{content:"";display:block;clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+
+.gradient {
+	background:#f9f9f9;
+	background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:-ms-linear-gradient(top, #FFFFFF, #f8f8f8);
+	background:linear-gradient(top, #FFFFFF, #f8f8f8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";	
+}
+
+// public end
