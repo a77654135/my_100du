@@ -28,4 +28,20 @@ body{font-size:12px; font-family:"微软雅黑";}
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";	
 }
 
+.common_title{
+	p{
+		height:40px;
+		line-height: 40px;
+		color: #cc0d13;
+		font-weight: bold;
+		span{
+			color: #000;
+		}
+	}
+	a{
+		position: relative;
+		top: 13px;
+	}
+}
+
 // public end

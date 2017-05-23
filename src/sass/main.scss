@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import "./_base.scss";
+@import "_base.scss";
 
 // mixin
 @mixin common_border($border:1px solid #dbdbdb, $borderRadius: 6px){
@@ -207,13 +207,14 @@
 
 		.main_wrap{
 			padding-bottom: 10px;
-
+			background-color: lightgray;
 			.section,.activity,.recommand{
 				@include common_border();
 			}
 			.section{
 				width:318px; 
 				padding:0 15px;
+				background-color: lightgreen;
 			}
 			.video{
 				h2{
@@ -243,11 +244,23 @@
 		.main_ad{
 			border-radius: 6px;
 			overflow: hidden;
+			margin-bottom: 10px;
 		}
 		
 	}
 	.side{
 		width: 240px;
+		.login,.rotate,.ad,.side_section{
+			@include common_border();
+			margin-bottom: 10px;
+		}
+		.rotate,.ad{
+			overflow:hidden;
+		}
+		.side_section{
+			width:214px;
+			padding: 0 12px;
+		}
 	}	
 	
 }

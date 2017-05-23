@@ -80,6 +80,25 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
 }
 
+/* line 32, src/sass/_base.scss */
+.common_title p {
+  height: 40px;
+  line-height: 40px;
+  color: #cc0d13;
+  font-weight: bold;
+}
+
+/* line 37, src/sass/_base.scss */
+.common_title p span {
+  color: #000;
+}
+
+/* line 41, src/sass/_base.scss */
+.common_title a {
+  position: relative;
+  top: 13px;
+}
+
 /* line 14, src/sass/main.scss */
 #header {
   width: 960px;
@@ -442,6 +461,7 @@ body {
 /* line 208, src/sass/main.scss */
 .content .main .main_wrap {
   padding-bottom: 10px;
+  background-color: lightgray;
 }
 
 /* line 211, src/sass/main.scss */
@@ -454,9 +474,10 @@ body {
 .content .main .main_wrap .section {
   width: 318px;
   padding: 0 15px;
+  background-color: lightgreen;
 }
 
-/* line 219, src/sass/main.scss */
+/* line 220, src/sass/main.scss */
 .content .main .main_wrap .video h2 {
   height: 42px;
   line-height: 42px;
@@ -467,13 +488,13 @@ body {
   background: url(../img/video_bg.gif) no-repeat 105px 10px;
 }
 
-/* line 228, src/sass/main.scss */
+/* line 229, src/sass/main.scss */
 .content .main .main_wrap .video ul {
   padding: 13px 0 17px 84px;
   background: url(../img/video_bg.gif) no-repeat 3px -33px;
 }
 
-/* line 231, src/sass/main.scss */
+/* line 232, src/sass/main.scss */
 .content .main .main_wrap .video ul a {
   height: 20px;
   line-height: 20px;
@@ -483,18 +504,37 @@ body {
   background: url(../img/dot.gif) no-repeat 0 8px;
 }
 
-/* line 236, src/sass/main.scss */
+/* line 237, src/sass/main.scss */
 .content .main .main_wrap .video ul a:hover {
   text-decoration: underline;
 }
 
-/* line 243, src/sass/main.scss */
+/* line 244, src/sass/main.scss */
 .content .main .main_ad {
   border-radius: 6px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
-/* line 249, src/sass/main.scss */
+/* line 251, src/sass/main.scss */
 .content .side {
   width: 240px;
+}
+
+/* line 253, src/sass/main.scss */
+.content .side .login, .content .side .rotate, .content .side .ad, .content .side .side_section {
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* line 257, src/sass/main.scss */
+.content .side .rotate, .content .side .ad {
+  overflow: hidden;
+}
+
+/* line 260, src/sass/main.scss */
+.content .side .side_section {
+  width: 214px;
+  padding: 0 12px;
 }
