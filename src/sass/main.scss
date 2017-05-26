@@ -2,6 +2,8 @@
 
 @import "_base.scss";
 
+$common_border_color: #dbdbdb;
+
 // mixin
 @mixin common_border($border:1px solid #dbdbdb, $borderRadius: 6px){
 	border: $border;
@@ -207,14 +209,14 @@
 
 		.main_wrap{
 			padding-bottom: 10px;
-			background-color: lightgray;
+			// background-color: lightgray;
 			.section,.activity,.recommand{
 				@include common_border();
 			}
 			.section{
 				width:318px; 
 				padding:0 15px;
-				background-color: lightgreen;
+				// background-color: lightgreen;
 			}
 			.video{
 				h2{
@@ -237,6 +239,75 @@
 						&:hover{text-decoration: underline;}
 						padding-left: 5px;
 						background:url(../img/dot.gif) no-repeat 0 8px; 
+					}
+				}
+			}
+			.help{
+				.contact{
+					border-bottom: 1px solid $common_border_color;
+					padding: 10px 0;
+					.message{
+						height: 40px;
+						line-height: 20px;
+						text-indent: 24px;
+					}
+					.phone_mail{
+						height:32px;
+						width:100%;
+						position: relative;
+						.phone{
+							height:32px;
+							line-height: 32px;
+							font-size: 14px;
+							font-weight: bold;
+							color:#b80000;
+							position: absolute;
+							left:7px;
+							top: 0;
+							padding-left: 20px;
+							background: url("../img/help.gif") no-repeat 0 7px;
+						}
+						.mail{
+							height:32px;
+							line-height: 32px;
+							font-size: 12px;
+							color:#696969;
+							position: absolute;
+							left: 170px;
+							top: 0;
+							padding-left: 25px;
+							background: url("../img/help.gif") no-repeat 0 -35px;
+						}
+					}
+				}
+				.help_info{
+					width:100%;
+					height:116px;
+					position: relative;
+					li{
+						height:18px;
+						line-height: 18px;
+						a{
+							color:#292929;
+							padding-left: 14px;
+							background: url("../img/dot.gif") no-repeat 5px 6px;
+							&.ul_header{
+								font-weight: bold;
+								padding-left: 0;
+								background-image: none;
+							}
+							&:hover{text-decoration: underline;}
+						}
+					}
+					.user_help{
+						position: absolute;
+						left: 7px;
+						top: 17px;
+					}
+					.corp_help{
+						position: absolute;
+						left: 180px;
+						top: 17px;
 					}
 				}
 			}
