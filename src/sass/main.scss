@@ -311,6 +311,34 @@ $common_border_color: #dbdbdb;
 					}
 				}
 			}
+			.media{
+				ul{
+					padding: 15px 0 18px 0;
+					li{
+						height:44px;
+						a{
+							overflow:hidden;
+						}
+						p{
+							padding-left: 10px;
+							height:44px;
+							line-height: 22px;
+						}
+					}
+				}
+			}
+			.hot_person{
+				padding-bottom: 20px;
+				li{
+					margin: 0 2px 2px 0;
+					&.person3,&.person7,&.person11{
+						margin-right: 0;
+					}
+					&.person8,&.person9,&.person10,&.person11{
+						margin-bottom: 0;
+					}
+				}
+			}
 		}
 		.main_ad{
 			border-radius: 6px;

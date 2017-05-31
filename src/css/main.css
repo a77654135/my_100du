@@ -602,30 +602,72 @@ body {
 }
 
 /* line 315, src/sass/main.scss */
+.content .main .main_wrap .media ul {
+  padding: 15px 0 18px 0;
+}
+
+/* line 317, src/sass/main.scss */
+.content .main .main_wrap .media ul li {
+  height: 44px;
+}
+
+/* line 319, src/sass/main.scss */
+.content .main .main_wrap .media ul li a {
+  overflow: hidden;
+}
+
+/* line 322, src/sass/main.scss */
+.content .main .main_wrap .media ul li p {
+  padding-left: 10px;
+  height: 44px;
+  line-height: 22px;
+}
+
+/* line 330, src/sass/main.scss */
+.content .main .main_wrap .hot_person {
+  padding-bottom: 20px;
+}
+
+/* line 332, src/sass/main.scss */
+.content .main .main_wrap .hot_person li {
+  margin: 0 2px 2px 0;
+}
+
+/* line 334, src/sass/main.scss */
+.content .main .main_wrap .hot_person li.person3, .content .main .main_wrap .hot_person li.person7, .content .main .main_wrap .hot_person li.person11 {
+  margin-right: 0;
+}
+
+/* line 337, src/sass/main.scss */
+.content .main .main_wrap .hot_person li.person8, .content .main .main_wrap .hot_person li.person9, .content .main .main_wrap .hot_person li.person10, .content .main .main_wrap .hot_person li.person11 {
+  margin-bottom: 0;
+}
+
+/* line 343, src/sass/main.scss */
 .content .main .main_ad {
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 10px;
 }
 
-/* line 322, src/sass/main.scss */
+/* line 350, src/sass/main.scss */
 .content .side {
   width: 240px;
 }
 
-/* line 324, src/sass/main.scss */
+/* line 352, src/sass/main.scss */
 .content .side .login, .content .side .rotate, .content .side .ad, .content .side .side_section {
   border: 1px solid #dbdbdb;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
-/* line 328, src/sass/main.scss */
+/* line 356, src/sass/main.scss */
 .content .side .rotate, .content .side .ad {
   overflow: hidden;
 }
 
-/* line 331, src/sass/main.scss */
+/* line 359, src/sass/main.scss */
 .content .side .side_section {
   width: 214px;
   padding: 0 12px;
