@@ -10,6 +10,27 @@ $common_border_color: #dbdbdb;
 	border-radius: $borderRadius;
 }
 
+@mixin triangle($isRed:1, $upDown:"down"){
+	$triangle_red_color:#ca0309;
+	$triangle_gray_color:#c1c1c1;
+	$color: #fff;
+	@if $isRed == 1 {
+		$color: $triangle_red_color;
+	} @else {
+		$color: $triangle_gray_color;
+	}
+	@if $upDown == "down" {
+		border-top: 4px solid $color;
+	}@else{
+		border-bottom: 4px solid $color;
+	}
+	position: absolute;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	width:0;
+	height:0;
+}
+
 // mixin end
 
 // layout
@@ -218,6 +239,58 @@ $common_border_color: #dbdbdb;
 				padding:0 15px;
 				// background-color: lightgreen;
 			}
+			.option{
+				width:350px;
+				position: relative;
+				.common_tab{
+					//background-color: lightgreen;
+					width:350px;
+					height:35px;
+					position: absolute;
+					z-index: 2;
+					li{
+						//background-color: lightgray;
+						position: relative;
+						width:172px;
+						height:33px;
+						border:1px solid $common_border_color;
+						border-radius: 6px 6px 0 0;
+						text-align: center;
+						line-height: 33px;
+						color: #666666;
+						font-weight: bold;
+						cursor: pointer;
+						span{color: #2b2d2d;}
+						a{
+							right:12px;
+							top:15px;
+							@include triangle(0,"down");
+						}
+						&.active{
+							color: #cc0d13;
+							span{color: #2b2d2d;}
+							background-color: #FFF;
+							height:35px;
+							line-height: 35px;							
+							top: -1px;
+							border-bottom: none;
+							a{
+								@include triangle(1,"down");
+							}
+						}
+						
+					}
+				}
+				.option_content{
+					border: 1px solid $common_border_color;
+					border-radius: 0 0 6px 6px;
+					width:318px;
+					padding: 0 15px;
+					position: absolute;
+					z-index: 1;
+					top:34px;
+				}
+			}
 			.video{
 				h2{
 					height:42px;
@@ -315,6 +388,8 @@ $common_border_color: #dbdbdb;
 				ul{
 					padding: 15px 0 18px 0;
 					li{
+						float:left;
+						width:100%;
 						height:44px;
 						a{
 							overflow:hidden;
@@ -336,6 +411,62 @@ $common_border_color: #dbdbdb;
 					}
 					&.person8,&.person9,&.person10,&.person11{
 						margin-bottom: 0;
+					}
+				}
+			}
+			.hot_list{
+				.option_content{
+					padding-top: 15px;
+					padding-bottom: 26px;
+					ul{
+						width:100%;
+						li{
+							width:100%;
+							height:114px;
+							background: url("../img/hot_list_li_bg.gif") no-repeat;
+							float:left;
+							a{
+								display:block;
+								width:106px;
+								height:86px;
+								img{
+									width:104px;
+									height:84px;
+									border: 1px solid lightgray;																		
+								}
+								&:hover{
+									img{
+										border:1px solid gray;
+									}
+								}
+							}
+							.hot_info{
+								width:190px;
+								h3{
+									a{
+										display:block;
+										width:100%;
+										height:35px;
+										line-height: 35px;
+										color: #bb0d0d;
+										font-weight: normal;
+										font-size: 12px;
+										&:hover{
+											text-decoration: underline;
+										}
+									}
+								}
+								p{
+									line-height: 18px;
+									color: #6e6e6e;
+								}
+							}
+						}
+					}
+					.more{
+						position: absolute;
+						right:15px;
+						bottom:10px;
 					}
 				}
 			}
